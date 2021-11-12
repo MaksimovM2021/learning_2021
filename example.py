@@ -1,14 +1,22 @@
-one = input()
-two = input()
-three = input()
-four = input()
-name = input()
+# A, B, C, D, E, F
 
+a = int(input())
+b = int(input())
+c = int(input())
+d = b ^ 2 - 4 * a * c
+if d <= b <= c:
+    print(a, b, c, sep='\n')
+elif c <= b <= a:
+    print(c, b, a, sep='\n')
+elif b <= a <= c:
+    print(b, a, c, sep='\n')
+elif c <= a <= b:
+    print(c, a, b, sep='\n')
+elif a <= c <= b:
+    print(a, c, b, sep='\n')
+elif b <= c <= a:
+    print(b, c, a, sep='\n')
 
-print(f"{four} - {name}")
-print(f"{three} - {name}")
-print(f"{two} - {name}")
-print(f"{one} - {name}")
-
-
-# "I wanna some '[drink]', my favorite meal - '[meal]'. Give me also '[subMeal]'. I will come soon... '[time]'
+# Петя, Витя и Митя вступили в грозные дебаты - кто должен стоять в шеренге первым, кто посередине, а кто последним.
+# Аркадий Викторович (известный физкультурник) предложил ребятам встать в шеренгу по росту.
+# # Напишите программу, которая принимает на вход три натуральных числа - значения роста ребят и выводит их в порядке возрастания.
